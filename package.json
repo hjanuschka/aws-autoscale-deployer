@@ -1,0 +1,33 @@
+{
+  "name": "aws-autoscale-automation",
+  "version": "1.0.0",
+  "description": "Deploy things to aws!",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "goconfig": "./bin/tlrg-awsdeploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LateRoomsGroup-Reservations/aws-autoscale-automation.git"
+  },
+  "author": "Karl Atkinson (https://github.com/karlatkinson)",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.6.10",
+    "bluebird": "^3.4.6",
+    "commander": "^2.9.0",
+    "lodash": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-react": "^6.4.1",
+    "grunt": "^1.0.1",
+    "grunt-eslint": "^19.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "load-grunt-tasks": "^3.4.0"
+  }
+}

@@ -1,0 +1,16 @@
+# Set end-of-line to Unix-style by default.
+* text eol=lf
+
+# Always normalise .js files
+*.js text
+
+# Don't mess with these ones.
+*.png binary
+*.jpg binary
+*.exe binary
+*.jar binary
+*.gif binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.svg binary
