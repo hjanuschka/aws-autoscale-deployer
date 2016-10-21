@@ -1,5 +1,5 @@
 {
-  "name": "aws-autoscale-automation",
+  "name": "@tlrg/aws-autoscale-deployer",
   "version": "1.0.0",
   "description": "Deploy things to aws!",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "grunt"
   },
   "bin": {
-    "goconfig": "./bin/tlrg-awsdeploy"
+    "goconfig": "./bin/aws-autoscale-deployer"
   },
   "repository": {
     "type": "git",
