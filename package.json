@@ -1,6 +1,6 @@
 {
   "name": "@tlrg/aws-autoscale-deployer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy things to aws!",
   "main": "index.js",
   "scripts": {
@@ -11,15 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LateRoomsGroup-Reservations/aws-autoscale-automation.git"
+    "url": "git+https://github.com/LateRoomsGroup/aws-autoscale-deployer.git"
   },
-  "author": "Karl Atkinson (https://github.com/karlatkinson)",
+  "author": "Karl Atkinson <karl.atkinson@laterooms.com> (https://github.com/karlatkinson)",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.6.10",
-    "bluebird": "^3.4.6",
-    "commander": "^2.9.0",
-    "lodash": "^4.16.4"
+    "commander": "^2.9.0"
   },
   "devDependencies": {
     "eslint": "^3.7.1",
