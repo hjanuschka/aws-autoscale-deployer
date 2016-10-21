@@ -7,7 +7,7 @@
     "test": "grunt"
   },
   "bin": {
-    "goconfig": "./bin/aws-autoscale-deployer"
+    "aws-autoscale-deployer": "./bin/aws-autoscale-deployer"
   },
   "repository": {
     "type": "git",
