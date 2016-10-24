@@ -1,6 +1,6 @@
 {
   "name": "@tlrg/aws-autoscale-deployer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Deploy things to aws!",
   "main": "index.js",
   "scripts": {
