@@ -1,0 +1,8 @@
+<ErrorResponse xmlns="http://autoscaling.amazonaws.com/doc/2011-01-01/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>BadCode</Code>
+    <Message>Something bad went wrong</Message>
+  </Error>
+  <RequestId>60508c71-9b96-11e6-a4ad-c314255aa39a</RequestId>
+</ErrorResponse>

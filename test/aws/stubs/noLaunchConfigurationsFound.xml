@@ -1,0 +1,8 @@
+<DescribeLaunchConfigurationsResponse xmlns="http://autoscaling.amazonaws.com/doc/2011-01-01/">
+  <DescribeLaunchConfigurationsResult>
+    <LaunchConfigurations/>
+  </DescribeLaunchConfigurationsResult>
+  <ResponseMetadata>
+    <RequestId>82b37149-9b91-11e6-b588-194c947f0cfd</RequestId>
+  </ResponseMetadata>
+</DescribeLaunchConfigurationsResponse>
