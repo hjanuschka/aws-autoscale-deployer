@@ -1,34 +1,30 @@
 const target = require('../../lib/aws/getAutoScalingGroup');
-const nock = require('nock');
-const fs = require('fs');
 const awsMock = require('./aws-mock');
-
-nock.disableNetConnect();
-nock.enableNetConnect('127.0.0.1');
-
+const path = require('path');
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
+
 chai.use(chaiAsPromised);
-var expect = chai.expect;
+const expect = chai.expect;
 
-describe('Retrieve Auto Scaling Group', function() {
+describe('Retrieve Auto Scaling Group', () => {
 
-    afterEach(function() {
-        nock.cleanAll();
+    afterEach(() => {
+        awsMock.clear();
     });
 
-    it('should reject with an error if zero auto scaling groups with matching name', function() {
+    it('should reject with an error if zero auto scaling groups with matching name', () => {
         const name = 'test-auto-scaling-group';
 
-        awsMock.autoscaling.describeAutoScalingGroups(name, __dirname + '/stubs/noAutoScalingGroupsFound.xml');
+        awsMock.autoscaling.describeAutoScalingGroups(name, path.join(__dirname, '/stubs/noAutoScalingGroupsFound.xml'));
 
         return expect(target(name)).to.eventually.be.rejectedWith(Error, 'Expected a single ASG but found 0');
     });
 
-    it('should resolve with autoscaling group when scaling group exists', function() {
+    it('should resolve with autoscaling group when scaling group exists', () => {
         const name = 'test-auto-scaling-group';
 
-        awsMock.autoscaling.describeAutoScalingGroups(name, __dirname + '/stubs/healthyAutoScalingGroup.xml');
+        awsMock.autoscaling.describeAutoScalingGroups(name, path.join(__dirname, '/stubs/healthyAutoScalingGroup.xml'));
 
         return expect(target(name)).to.eventually.have.property('AutoScalingGroupName', name);
     });
