@@ -1,15 +1,13 @@
-'use strict';
-
-module.exports = function(grunt) {
-    /* eslint-disable global-require */
+module.exports = function (grunt) {
+    /* eslint-disable */
     require('load-grunt-tasks')(grunt);
-    /* eslint-enable global-require */
+    /* eslint-enable */
 
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         eslint: {
-            target: ['*.js']
+            target: ['.']
         },
         mochaTest: {
             options: {
