@@ -51,6 +51,14 @@ function updateAutoScalingGroup(autoScalingGroupName, launchConfigurationName, s
         });
 }
 
+function terminateInstanceInAutoScalingGroup(instanceId, decrementDesiredCapacity, statusCode, xmlName) {
+    nock('https://autoscaling.eu-west-1.amazonaws.com:443')
+        .post('/', `Action=TerminateInstanceInAutoScalingGroup&InstanceId=${instanceId}&ShouldDecrementDesiredCapacity=${decrementDesiredCapacity}&Version=2011-01-01`)
+        .replyWithFile(statusCode, xmlName, {
+            'content-type': 'application/xml'
+        });
+}
+
 module.exports = {
     clear() {
         nock.cleanAll();
@@ -70,6 +78,7 @@ module.exports = {
         describeLaunchConfigurations,
         createLaunchConfiguration,
         deleteLaunchConfiguration,
-        updateAutoScalingGroup
+        updateAutoScalingGroup,
+        terminateInstanceInAutoScalingGroup
     }
 };

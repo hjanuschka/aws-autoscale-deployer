@@ -96,7 +96,7 @@ describe('Update Launch Configuration', () => {
         const amiName = 'ami-4243234';
 
         awsMock.autoscaling.describeLaunchConfigurations(launchConfigName, path.join(__dirname, '/stubs/singleAutoScalingGroupFound.xml'));
-        awsMock.autoscaling.createLaunchConfiguration(newLaunchConfigName, amiName, 200, path.join(__dirname, '/stubs/successResponse.xml'));
+        awsMock.autoscaling.createLaunchConfiguration(newLaunchConfigName, amiName, 200, path.join(__dirname, '/stubs/autoScalingCommandSuccessResponse.xml'));
         awsMock.autoscaling.updateAutoScalingGroup(autoScalingGroupName, newLaunchConfigName, 400, path.join(__dirname, '/stubs/autoScalingErrorResponse.xml'));
 
         stubAutoScalingGroup = {
@@ -117,8 +117,8 @@ describe('Update Launch Configuration', () => {
         const amiName = 'ami-4243234';
 
         awsMock.autoscaling.describeLaunchConfigurations(launchConfigName, path.join(__dirname, '/stubs/singleAutoScalingGroupFound.xml'));
-        awsMock.autoscaling.createLaunchConfiguration(newLaunchConfigName, amiName, 200, path.join(__dirname, '/stubs/successResponse.xml'));
-        awsMock.autoscaling.updateAutoScalingGroup(autoScalingGroupName, newLaunchConfigName, 200, path.join(__dirname, '/stubs/successResponse.xml'));
+        awsMock.autoscaling.createLaunchConfiguration(newLaunchConfigName, amiName, 200, path.join(__dirname, '/stubs/autoScalingCommandSuccessResponse.xml'));
+        awsMock.autoscaling.updateAutoScalingGroup(autoScalingGroupName, newLaunchConfigName, 200, path.join(__dirname, '/stubs/autoScalingCommandSuccessResponse.xml'));
         awsMock.autoscaling.deleteLaunchConfiguration(launchConfigName, 400, path.join(__dirname, '/stubs/autoScalingErrorResponse.xml'));
 
         stubAutoScalingGroup = {
@@ -139,9 +139,9 @@ describe('Update Launch Configuration', () => {
         const amiName = 'ami-4243234';
 
         awsMock.autoscaling.describeLaunchConfigurations(launchConfigName, path.join(__dirname, '/stubs/singleAutoScalingGroupFound.xml'));
-        awsMock.autoscaling.createLaunchConfiguration(newLaunchConfigName, amiName, 200, path.join(__dirname, '/stubs/successResponse.xml'));
-        awsMock.autoscaling.updateAutoScalingGroup(autoScalingGroupName, newLaunchConfigName, 200, path.join(__dirname, '/stubs/successResponse.xml'));
-        awsMock.autoscaling.deleteLaunchConfiguration(launchConfigName, 200, path.join(__dirname, '/stubs/successResponse.xml'));
+        awsMock.autoscaling.createLaunchConfiguration(newLaunchConfigName, amiName, 200, path.join(__dirname, '/stubs/autoScalingCommandSuccessResponse.xml'));
+        awsMock.autoscaling.updateAutoScalingGroup(autoScalingGroupName, newLaunchConfigName, 200, path.join(__dirname, '/stubs/autoScalingCommandSuccessResponse.xml'));
+        awsMock.autoscaling.deleteLaunchConfiguration(launchConfigName, 200, path.join(__dirname, '/stubs/autoScalingCommandSuccessResponse.xml'));
 
         stubAutoScalingGroup = {
             AutoScalingGroupName: autoScalingGroupName,
