@@ -1,55 +1,55 @@
 {
-    "name": "@tlrg/aws-autoscale-deployer",
-    "version": "1.1.3",
-    "description": "Deploy things to aws!",
-    "main": "index.js",
-    "preferGlobal": true,
-    "engines": {
-        "node": ">=4.0.0"
-    },
-    "scripts": {
-        "test": "grunt"
-    },
-    "bin": {
-        "aws-autoscale-deployer": "./bin/aws-autoscale-deployer"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/LateRoomsGroup/aws-autoscale-deployer.git"
-    },
-    "bugs": {
-        "url": "https://github.com/LateRoomsGroup/aws-autoscale-deployer/issues"
-    },
-    "homepage": "https://github.com/LateRoomsGroup/aws-autoscale-deployer",
-    "keywords": [
-        "aws-sdk",
-        "aws",
-        "autoscaling",
-        "auto-scaling",
-        "ec2",
-        "ami"
-    ],
-    "author": "Karl Atkinson <karl.atkinson@laterooms.com> (https://github.com/karlatkinson)",
-    "license": "Apache-2.0",
-    "dependencies": {
-        "aws-sdk": "^2.6.10",
-        "commander": "^2.9.0"
-    },
-    "devDependencies": {
-        "chai": "^3.5.0",
-        "chai-as-promised": "^6.0.0",
-        "eslint": "^3.8.1",
-        "eslint-config-airbnb": "^12.0.0",
-        "eslint-plugin-import": "^1.16.0",
-        "eslint-plugin-jsx-a11y": "^2.2.2",
-        "eslint-plugin-react": "^6.4.1",
-        "grunt": "^1.0.1",
-        "grunt-env": "^0.4.4",
-        "grunt-eslint": "^19.0.0",
-        "grunt-mocha-test": "^0.13.2",
-        "load-grunt-tasks": "^3.4.0",
-        "mocha": "^3.1.2",
-        "nock": "^9.0.0",
-        "proxyquire": "^1.7.10"
-    }
+  "name": "@tlrg/aws-autoscale-deployer",
+  "version": "1.1.4",
+  "description": "Deploy things to aws!",
+  "main": "index.js",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "aws-autoscale-deployer": "./bin/aws-autoscale-deployer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LateRoomsGroup/aws-autoscale-deployer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LateRoomsGroup/aws-autoscale-deployer/issues"
+  },
+  "homepage": "https://github.com/LateRoomsGroup/aws-autoscale-deployer",
+  "keywords": [
+    "aws-sdk",
+    "aws",
+    "autoscaling",
+    "auto-scaling",
+    "ec2",
+    "ami"
+  ],
+  "author": "Karl Atkinson <karl.atkinson@laterooms.com> (https://github.com/karlatkinson)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "aws-sdk": "^2.6.10",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.4.1",
+    "grunt": "^1.0.1",
+    "grunt-env": "^0.4.4",
+    "grunt-eslint": "^19.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "load-grunt-tasks": "^3.4.0",
+    "mocha": "^3.1.2",
+    "nock": "^9.0.0",
+    "proxyquire": "^1.7.10"
+  }
 }
